@@ -16,10 +16,12 @@ function App() {
   return (
     <div
       className="App
-     flex items-center min-h-[100vh]"
+      r "
     >
-      {quotes &&
-        quotes.map((quote) => <Quotes key={quote._id} quote={quote} />)}
+      <div className="min-h-screen flex items-center justify-center">
+        {quotes &&
+          quotes.map((quote) => <Quotes key={quote._id} quote={quote} />)}
+      </div>
     </div>
   );
 }
